@@ -106,3 +106,14 @@ export const f3 = a => {
   }
   return a.split('.').filter(part => part.length > 0).length;
 };
+
+// Test 4
+let running;
+export const f4 = cb => {
+  if (!running) {
+    running = setTimeout(() => {
+      running = null;
+      cb();
+    }, 300);
+  }
+};
