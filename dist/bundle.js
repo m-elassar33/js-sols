@@ -90,10 +90,23 @@
 /*!********************!*\
   !*** ./src/app.js ***!
   \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log('Hello World');\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYXBwLmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2FwcC5qcz8xMTEyIl0sInNvdXJjZXNDb250ZW50IjpbImNvbnNvbGUubG9nKCdIZWxsbyBXb3JsZCcpO1xuIl0sIm1hcHBpbmdzIjoiQUFBQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/app.js\n");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_solutions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/solutions */ \"./src/modules/solutions.js\");\n\n\n// Test 1\nconsole.log(Object(_modules_solutions__WEBPACK_IMPORTED_MODULE_0__[\"f1\"])('bacdc', 'dcbac'));\nconsole.log(Object(_modules_solutions__WEBPACK_IMPORTED_MODULE_0__[\"f1\"])('bacdc', 'dcbad'));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYXBwLmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2FwcC5qcz8xMTEyIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGYxIH0gZnJvbSAnLi9tb2R1bGVzL3NvbHV0aW9ucyc7XG5cbi8vIFRlc3QgMVxuY29uc29sZS5sb2coZjEoJ2JhY2RjJywgJ2RjYmFjJykpO1xuY29uc29sZS5sb2coZjEoJ2JhY2RjJywgJ2RjYmFkJykpO1xuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/app.js\n");
+
+/***/ }),
+
+/***/ "./src/modules/solutions.js":
+/*!**********************************!*\
+  !*** ./src/modules/solutions.js ***!
+  \**********************************/
+/*! exports provided: f1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"f1\", function() { return f1; });\n// Test 1\nconst f1 = (a, b) => {\n  const freqs = {\n    a: { a: 0, b: 0 },\n    b: { a: 0, b: 0 },\n    c: { a: 0, b: 0 },\n    d: { a: 0, b: 0 },\n    e: { a: 0, b: 0 },\n    f: { a: 0, b: 0 },\n    g: { a: 0, b: 0 },\n    h: { a: 0, b: 0 },\n    i: { a: 0, b: 0 },\n    j: { a: 0, b: 0 },\n    k: { a: 0, b: 0 },\n    l: { a: 0, b: 0 },\n    m: { a: 0, b: 0 },\n    n: { a: 0, b: 0 },\n    o: { a: 0, b: 0 },\n    p: { a: 0, b: 0 },\n    q: { a: 0, b: 0 },\n    r: { a: 0, b: 0 },\n    s: { a: 0, b: 0 },\n    t: { a: 0, b: 0 },\n    u: { a: 0, b: 0 },\n    v: { a: 0, b: 0 },\n    w: { a: 0, b: 0 },\n    x: { a: 0, b: 0 },\n    y: { a: 0, b: 0 },\n    z: { a: 0, b: 0 }\n  };\n  for (let i = 0; i < a.length; i++) {\n    freqs[a[i].toLowerCase()].a++;\n  }\n  for (let j = 0; j < b.length; j++) {\n    freqs[b[j].toLowerCase()].b++;\n  }\n  let noOfDeletionsNeeded = 0;\n  for (const letter in freqs) {\n    if (freqs[letter].a !== freqs[letter].b) {\n      noOfDeletionsNeeded += Math.abs(freqs[letter].a - freqs[letter].b);\n    }\n  }\n  return noOfDeletionsNeeded;\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvbW9kdWxlcy9zb2x1dGlvbnMuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvbW9kdWxlcy9zb2x1dGlvbnMuanM/N2RiOSJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBUZXN0IDFcbmV4cG9ydCBjb25zdCBmMSA9IChhLCBiKSA9PiB7XG4gIGNvbnN0IGZyZXFzID0ge1xuICAgIGE6IHsgYTogMCwgYjogMCB9LFxuICAgIGI6IHsgYTogMCwgYjogMCB9LFxuICAgIGM6IHsgYTogMCwgYjogMCB9LFxuICAgIGQ6IHsgYTogMCwgYjogMCB9LFxuICAgIGU6IHsgYTogMCwgYjogMCB9LFxuICAgIGY6IHsgYTogMCwgYjogMCB9LFxuICAgIGc6IHsgYTogMCwgYjogMCB9LFxuICAgIGg6IHsgYTogMCwgYjogMCB9LFxuICAgIGk6IHsgYTogMCwgYjogMCB9LFxuICAgIGo6IHsgYTogMCwgYjogMCB9LFxuICAgIGs6IHsgYTogMCwgYjogMCB9LFxuICAgIGw6IHsgYTogMCwgYjogMCB9LFxuICAgIG06IHsgYTogMCwgYjogMCB9LFxuICAgIG46IHsgYTogMCwgYjogMCB9LFxuICAgIG86IHsgYTogMCwgYjogMCB9LFxuICAgIHA6IHsgYTogMCwgYjogMCB9LFxuICAgIHE6IHsgYTogMCwgYjogMCB9LFxuICAgIHI6IHsgYTogMCwgYjogMCB9LFxuICAgIHM6IHsgYTogMCwgYjogMCB9LFxuICAgIHQ6IHsgYTogMCwgYjogMCB9LFxuICAgIHU6IHsgYTogMCwgYjogMCB9LFxuICAgIHY6IHsgYTogMCwgYjogMCB9LFxuICAgIHc6IHsgYTogMCwgYjogMCB9LFxuICAgIHg6IHsgYTogMCwgYjogMCB9LFxuICAgIHk6IHsgYTogMCwgYjogMCB9LFxuICAgIHo6IHsgYTogMCwgYjogMCB9XG4gIH07XG4gIGZvciAobGV0IGkgPSAwOyBpIDwgYS5sZW5ndGg7IGkrKykge1xuICAgIGZyZXFzW2FbaV0udG9Mb3dlckNhc2UoKV0uYSsrO1xuICB9XG4gIGZvciAobGV0IGogPSAwOyBqIDwgYi5sZW5ndGg7IGorKykge1xuICAgIGZyZXFzW2Jbal0udG9Mb3dlckNhc2UoKV0uYisrO1xuICB9XG4gIGxldCBub09mRGVsZXRpb25zTmVlZGVkID0gMDtcbiAgZm9yIChjb25zdCBsZXR0ZXIgaW4gZnJlcXMpIHtcbiAgICBpZiAoZnJlcXNbbGV0dGVyXS5hICE9PSBmcmVxc1tsZXR0ZXJdLmIpIHtcbiAgICAgIG5vT2ZEZWxldGlvbnNOZWVkZWQgKz0gTWF0aC5hYnMoZnJlcXNbbGV0dGVyXS5hIC0gZnJlcXNbbGV0dGVyXS5iKTtcbiAgICB9XG4gIH1cbiAgcmV0dXJuIG5vT2ZEZWxldGlvbnNOZWVkZWQ7XG59O1xuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/modules/solutions.js\n");
 
 /***/ })
 
