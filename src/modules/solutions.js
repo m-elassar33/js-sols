@@ -55,3 +55,54 @@ export const f2 = (a, b) => {
     return occurs;
   });
 };
+
+// Test 3
+export const f3 = a => {
+  const alphabet = [
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f',
+    'g',
+    'h',
+    'i',
+    'j',
+    'k',
+    'l',
+    'm',
+    'n',
+    'o',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'u',
+    'v',
+    'w',
+    'x',
+    'y',
+    'z',
+    '0',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '-',
+    '_',
+    '.'
+  ];
+  for (let i = 0; i < a.length; i++) {
+    if (!alphabet.includes(a[i].toLowerCase())) {
+      return 0;
+    }
+  }
+  return a.split('.').filter(part => part.length > 0).length;
+};
