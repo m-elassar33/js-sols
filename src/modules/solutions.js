@@ -42,3 +42,16 @@ export const f1 = (a, b) => {
   }
   return noOfDeletionsNeeded;
 };
+
+// Test 2
+export const f2 = (a, b) => {
+  return b.map(str => {
+    let occurs = 0;
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] === str) {
+        occurs++;
+      }
+    }
+    return occurs;
+  });
+};
